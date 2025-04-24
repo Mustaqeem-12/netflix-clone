@@ -9,7 +9,8 @@ body {
 }
 
 .container-1 {
-  background-image: url(background-2.jpg);
+   font-family: "Poppins", serif;
+  background-image: url(background-2.jpg)no-repeat;
   object-fit: cover;
   width: 100%;
   height: 100vh;
@@ -57,6 +58,10 @@ select {
   border: 1px solid white;
   border-radius: 5%;
 }
+option{
+  background-color:white;
+  color: black;
+}
 /* option{
     background-color: black;
     margin-top: 10px;
@@ -68,7 +73,7 @@ select {
   background-color: red;
   color: white;
   border: 2px solid red;
-  font-weight: 800;
+  font-weight: 600;
   margin-left: 10px;
   border: 5px solid red;
   border-radius: 5%;
@@ -92,8 +97,10 @@ h5 {
     justify-content: center;  
     align-items: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 15px;
     width: 100%;
+    padding-top: 40px;
+
 }
 
 
@@ -117,7 +124,7 @@ h5 {
 input{
   height: 50px;
   width: 100%;
-  max-width: 540px;
+  max-width: 400px;
   border-radius: 5px;
   background-color: transparent;
   backdrop-filter: blur(10px);
@@ -189,10 +196,11 @@ input{
 }
 
 .card h1 {
+   font-family: "Poppins", serif;
   position: absolute;
   top: 180px;
-  font-size: 100px;
-  font-family: emoji;
+  font-size: 90px;
+  /* font-style: var(); */
   color: black;
   -webkit-text-stroke: 2px white;
 }
@@ -205,10 +213,12 @@ input{
   height: 290px;
   width: 200px;
   border-radius: 8px;
-  margin-left: 25px;
+  margin-left: 20px;
+  /* transition: all 2s ease-in; */
 }
 .cards:hover {
   transform: scale(1.1);
+    transition: all 0.5s ease-in;
   border-radius: 7px;
 }
 
@@ -230,11 +240,12 @@ input{
   padding: 10px;
   flex-direction: column;
   width: 300px;
-  height: 320px;
+  height: 280px;
   background: linear-gradient(#192042, #201220);
   text-align: start;
   position: relative;
-  border-radius: 7px;
+  border-radius: 15px;
+
   .enj {
     margin-bottom: 20px;
     font-style: normal;
@@ -247,10 +258,14 @@ input{
     bottom: 10px;
   }
 }
+.part-5card:hover{
+  background-color: #525050;
+}
 .freq {
   /* margin: 50px 150px; */
   margin-left: 150px;
   margin-top: 50px;
+  font-family: sans-serif;
 }
 .part-5 {
   margin: auto 80px;
@@ -272,8 +287,9 @@ input{
   transform: #181818;
 }
 .plus {
-  font-size: 80px;
+  font-size: 60px;
   font-weight: 100;
+  font-family: emoji;
 }
 .read {
   /* margin: 50px 400px; */
@@ -281,10 +297,11 @@ input{
   margin-left: 450px;
 }
 h2{
-  font-weight:400;
+  /* font-weight:400; */
+  font-family: sans-serif;
 }
 .inp2 {
-  gap: 20px;
+  gap: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -307,18 +324,19 @@ h2{
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 20px;
-width: 100%;
+  gap: 1px;
+/* width: 100%; */
 }
-/* input{
-    width: 600px;
-} */
+.input2{
+  width: 600px;
+  background-color: #1c2432;
+}
 a {
   color: white;
 }
 .part6 {
   list-style-type: none;
-  opacity: 0.5;
+  font-size: 15px;
 }
 .part6h {
   display: flex;
@@ -352,13 +370,13 @@ ul {
   padding: 50px 150px;
   opacity: 0.5;
 }
-option {
+/* option {
   background-color: black;
-}
+} */
 
 .net{
-    
-    opacity: 0.5;
+    padding-top: 40px;
+    opacity:0.5px;
  }
  @media (max-width:1024px){
   .freq{
@@ -449,7 +467,7 @@ option {
     opacity: 0.7;
 }
   .input2{
-     width: 368px;
+     width: 291px;
   }
   input{
     width: 373px;
@@ -462,7 +480,7 @@ option {
         /* margin: 10px 120px; */
         height: 50px;
         width: 200px;
-        margin-left: 7px;
+        margin: 10px 10px;
     }
     .part6h {
       justify-content: center;
